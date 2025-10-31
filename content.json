@@ -1,0 +1,102 @@
+{
+  "Format": "2.8.0",
+  "ConfigSchema": {
+    "BoldEnabled": {
+      "AllowValues": "true, false",
+      "Default": true,
+      "Section": "Bold Font"
+    },
+    "BoldNumerals": {
+      "AllowValues": "Text, Lining",
+      "Default": "Text",
+      "Section": "Bold Font"
+    },
+    "BoldSS01": {
+      "AllowValues": "Default, Plain",
+      "Default": "Default",
+      "Section": "Bold Font"
+    },
+    "SpriteEnabled": {
+      "AllowValues": "true, false",
+      "Default": true,
+      "Section": "Sprite Fonts"
+    },
+    "SpriteNumerals": {
+      "AllowValues": "Text, Lining",
+      "Default": "Text",
+      "Section": "Sprite Fonts"
+    },
+    "SpriteSS01": {
+      "AllowValues": "Default, Plain",
+      "Default": "Default",
+      "Section": "Sprite Fonts"
+    },
+    "DummyValue": {
+      "AllowBlank": true,
+      "Default": "",
+      "Section": "Bold Specimen"
+    }
+  },
+  "DynamicTokens": [
+    {
+      "Name": "SpriteFontTexture",
+      "Value": "{{ModId}}/SpriteFont1x"
+    },
+    {
+      "Name": "SpriteFontAltTexture",
+      "Value": "{{ModId}}/SpriteFontAlt1x"
+    },
+    {
+      "Name": "Sf1Scale",
+      "Value": "300"
+    },
+    {
+      "Name": "Sf1Scale",
+      "Value": "200",
+      "When": {
+        "Language": "de, ru"
+      }
+    },
+    {
+      "Name": "BoldAltTexture",
+      "Value": "{{ModId}}/font_bold_alt"
+    },
+    {
+      "Name": "BoldExtraTexture",
+      "Value": "{{ModId}}/font_bold_extra"
+    },
+    {
+      "Name": "ColoredAltTexture",
+      "Value": "{{ModId}}/font_colored_alt"
+    },
+    {
+      "Name": "ColoredExtraTexture",
+      "Value": "{{ModId}}/font_colored_extra"
+    }
+  ],
+  "Changes": [
+    // these loads are unconditional because the assets are new. gating them spits
+    // warnings in the log if the gate closes and they aren't loaded anymore
+    {
+      "Target": "{{SpriteFontTexture}}, {{SpriteFontAltTexture}}, {{BoldAltTexture}}, {{BoldExtraTexture}}, {{ColoredAltTexture}}, {{ColoredExtraTexture}}",
+      "Action": "Load",
+      "FromFile": "assets/{{TargetWithoutPath}}.png",
+      "Priority": "Exclusive"
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "data/bold-font.json",
+      "When": {
+        "BoldEnabled": true
+      }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/sprite-fonts.json",
+      "When": {
+        "SpriteEnabled": true
+      }
+    }
+  ]
+}

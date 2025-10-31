@@ -1,0 +1,20 @@
+{
+  "config.section.Bold Font.name": "Bold Font",
+  "config.section.Bold Font.description": "The font used for dialogue boxes, NPC speech, mail, and some menus (like this one!) for section headings.",
+  "config.BoldEnabled.name": "Enable",
+  "config.BoldNumerals.name": "Numeral style",
+  "config.BoldNumerals.description": "Text numerals vary in height and look more like lowercase letters. Lining numerals are all the same height, like uppercase.",
+  "config.BoldSS01.name": "Letter style (a, g)",
+  "config.BoldSS01.description": "Choose between two-storey 'a' and binocular 'g' (default), or simpler, handwriting-style forms for those letters (plain).",
+
+  "config.section.Sprite Fonts.name": "Sprite Fonts",
+  "config.section.Sprite Fonts.description": "The fonts used for most interface elements: inventory, tooltips (like this one!), etc.",
+  "config.SpriteEnabled.name": "Enable",
+  "config.SpriteNumerals.name": "Numeral style",
+  "config.SpriteNumerals.description": "Text numerals vary in height and look more like lowercase letters. Lining numerals are all the same height, like uppercase.",
+  "config.SpriteSS01.name": "Letter style (a, g)",
+  "config.SpriteSS01.description": "Choose between two-storey 'a' and binocular 'g' (default), or simpler, handwriting-style forms for those letters (plain).",
+
+  "config.section.Bold Specimen.name": "Bold 0123456789 abcdefghijk",
+  "config.DummyValue.name": "Sprite 0123456789 abcdefghijk"
+}

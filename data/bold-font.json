@@ -1,0 +1,916 @@
+{
+  "Changes": [
+    {
+      "Target": "LooseSprites/font_bold, LooseSprites/font_colored",
+      "Action": "Load",
+      "FromFile": "assets/{{TargetWithoutPath}}.png",
+      "Priority": "High"
+    },
+    {
+      "Target": "ichortower.FontSmasher/BoldFont",
+      "Action": "EditData",
+      "TargetField": ["Glyphs"],
+      "Entries": {
+        "<Space>": {
+          "LeftRightPadding": 1
+        },
+        "!": {
+          "LeftRightPadding": 1
+        },
+        "\"": {
+          "LeftRightPadding": 1
+        },
+        "#": {
+        },
+        "$": {
+        },
+        "%": {
+        },
+        "&": {
+        },
+        "'": {
+          "LeftRightPadding": 2
+        },
+        "(": {
+          "LeftRightPadding": 1
+        },
+        ")": {
+          "LeftRightPadding": 1
+        },
+        "*": {
+        },
+        "+": {
+        },
+        ",": {
+          "LeftRightPadding": 2
+        },
+        "-": {
+          "LeftRightPadding": 1
+        },
+        ".": {
+          "LeftRightPadding": 2
+        },
+        "/": {
+          "LeftRightPadding": 1
+        },
+        "0": {
+          "LeftRightPadding": 1
+        },
+        "1": {
+          "LeftRightPadding": 1
+        },
+        "2": {
+          "LeftRightPadding": 1
+        },
+        "3": {
+          "LeftRightPadding": 1
+        },
+        "4": {
+          "LeftRightPadding": 1
+        },
+        "5": {
+          "LeftRightPadding": 1
+        },
+        "6": {
+          "LeftRightPadding": 1
+        },
+        "7": {
+          "LeftRightPadding": 1
+        },
+        "8": {
+          "LeftRightPadding": 1
+        },
+        "9": {
+          "LeftRightPadding": 1
+        },
+        ":": {
+          "LeftRightPadding": 2
+        },
+        ";": {
+          "LeftRightPadding": 2
+        },
+        "<": {
+        },
+        "=": {
+        },
+        ">": {
+        },
+        "?": {
+          "LeftRightPadding": 1
+        },
+        "@": {
+        },
+        "A": {
+        },
+        "B": {
+        },
+        "C": {
+        },
+        "D": {
+        },
+        "E": {
+        },
+        "F": {
+        },
+        "G": {
+        },
+        "H": {
+        },
+        "I": {
+        },
+        "J": {
+        },
+        "K": {
+        },
+        "L": {
+        },
+        "M": {
+        },
+        "N": {
+        },
+        "O": {
+        },
+        "P": {
+        },
+        "Q": {
+        },
+        "R": {
+        },
+        "S": {
+        },
+        "T": {
+        },
+        "U": {
+        },
+        "V": {
+        },
+        "W": {
+        },
+        "X": {
+        },
+        "Y": {
+        },
+        "Z": {
+        },
+        "[": {
+          "LeftRightPadding": 1
+        },
+        "\\": {
+          "LeftRightPadding": 1
+        },
+        "]": {
+          "LeftRightPadding": 1
+        },
+        "^": {
+        },
+        "_": {
+        },
+        "`": {
+        },
+        "{": {
+          "LeftRightPadding": 1
+        },
+        "|": {
+          "LeftRightPadding": 2
+        },
+        "}": {
+          "LeftRightPadding": 1
+        },
+        "~": {
+        },
+        "’": {
+          "LeftRightPadding": 2
+        },
+        "¡": {
+          "LeftRightPadding": 2
+        },
+        "ᵃ": {
+          "LeftRightPadding": 2
+        },
+        "«": {
+          "LeftRightPadding": 1
+        },
+        "ᵒ": {
+          "LeftRightPadding": 2
+        },
+        "»": {
+          "LeftRightPadding": 1
+        },
+        "¿": {
+          "LeftRightPadding": 1
+        },
+        "Ā": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 0
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 0
+          },
+          "Junimo": {
+            "SpriteIndex": 257
+          }
+        },
+        "Ē": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 2
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 2
+          },
+          "Junimo": {
+            "SpriteIndex": 261
+          }
+        },
+        "Ī": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 4
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 4
+          },
+          "Junimo": {
+            "SpriteIndex": 265
+          }
+        },
+        "Ō": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 6
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 6
+          },
+          "Junimo": {
+            "SpriteIndex": 271
+          }
+        },
+        "Ū": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 8
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 8
+          },
+          "Junimo": {
+            "SpriteIndex": 277
+          }
+        },
+        "Ŷ": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 10
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 10
+          },
+          "Junimo": {
+            "SpriteIndex": 281
+          }
+        }
+      } // Entries
+    },
+
+    // lower case glyphs must be separate due to case insensitivity in newtonsoft as
+    // employed by content patcher ("A" and "a" in same Entries collapse into one).
+    {
+      "Target": "ichortower.FontSmasher/BoldFont",
+      "Action": "EditData",
+      "TargetField": ["Glyphs"],
+      "Entries": {
+        "a": {
+          "LeftRightPadding": 1
+        },
+        "b": {
+          "LeftRightPadding": 1
+        },
+        "c": {
+          "LeftRightPadding": 1
+        },
+        "d": {
+          "LeftRightPadding": 1
+        },
+        "e": {
+          "LeftRightPadding": 1
+        },
+        "f": {
+          "LeftRightPadding": 1
+        },
+        "g": {
+          "LeftRightPadding": 1
+        },
+        "h": {
+          "LeftRightPadding": 1
+        },
+        "i": {
+          "LeftRightPadding": 2
+        },
+        "j": {
+          "LeftRightPadding": 2
+        },
+        "k": {
+          "LeftRightPadding": 1
+        },
+        "l": {
+          "LeftRightPadding": 2
+        },
+        "m": {
+        },
+        "n": {
+          "LeftRightPadding": 1
+        },
+        "o": {
+          "LeftRightPadding": 1
+        },
+        "p": {
+          "LeftRightPadding": 1
+        },
+        "q": {
+          "LeftRightPadding": 1
+        },
+        "r": {
+          "LeftRightPadding": 1
+        },
+        "s": {
+          "LeftRightPadding": 1
+        },
+        "t": {
+          "LeftRightPadding": 1
+        },
+        "u": {
+          "LeftRightPadding": 1
+        },
+        "v": {
+          "LeftRightPadding": 1
+        },
+        "w": {
+        },
+        "x": {
+          "LeftRightPadding": 1
+        },
+        "y": {
+          "LeftRightPadding": 1
+        },
+        "z": {
+          "LeftRightPadding": 1
+        },
+        "ð": {
+          "LeftRightPadding": 1
+        },
+        "þ": {
+          "LeftRightPadding": 1
+        },
+        // diacritics
+        "à": {
+          "LeftRightPadding": 1
+        },
+        "á": {
+          "LeftRightPadding": 1
+        },
+        "â": {
+          "LeftRightPadding": 1
+        },
+        "ã": {
+          "LeftRightPadding": 1
+        },
+        "ä": {
+          "LeftRightPadding": 1
+        },
+        "å": {
+          "LeftRightPadding": 1
+        },
+        "ą": {
+          "LeftRightPadding": 1
+        },
+        "ç": {
+          "LeftRightPadding": 1
+        },
+        "ć": {
+          "LeftRightPadding": 1
+        },
+        "è": {
+          "LeftRightPadding": 1
+        },
+        "é": {
+          "LeftRightPadding": 1
+        },
+        "ê": {
+          "LeftRightPadding": 1
+        },
+        "ë": {
+          "LeftRightPadding": 1
+        },
+        "ę": {
+          "LeftRightPadding": 1
+        },
+        "ğ": {
+          "LeftRightPadding": 1
+        },
+        "ì": {
+          "LeftRightPadding": 2
+        },
+        "í": {
+          "LeftRightPadding": 2
+        },
+        "î": {
+          "LeftRightPadding": 2
+        },
+        "ï": {
+          "LeftRightPadding": 2
+        },
+        "ı": {
+          "LeftRightPadding": 2
+        },
+        "ł": {
+          "LeftRightPadding": 2
+        },
+        "ñ": {
+          "LeftRightPadding": 1
+        },
+        "ń": {
+          "LeftRightPadding": 1
+        },
+        "ò": {
+          "LeftRightPadding": 1
+        },
+        "ó": {
+          "LeftRightPadding": 1
+        },
+        "ô": {
+          "LeftRightPadding": 1
+        },
+        "õ": {
+          "LeftRightPadding": 1
+        },
+        "ö": {
+          "LeftRightPadding": 1
+        },
+        "ő": {
+          "LeftRightPadding": 1
+        },
+        "ş": {
+          "LeftRightPadding": 1
+        },
+        "ś": {
+          "LeftRightPadding": 1
+        },
+        "ù": {
+          "LeftRightPadding": 1
+        },
+        "ú": {
+          "LeftRightPadding": 1
+        },
+        "û": {
+          "LeftRightPadding": 1
+        },
+        "ü": {
+          "LeftRightPadding": 1
+        },
+        "ű": {
+          "LeftRightPadding": 1
+        },
+        "ý": {
+          "LeftRightPadding": 1
+        },
+        "ÿ": {
+          "LeftRightPadding": 1
+        },
+        "ź": {
+          "LeftRightPadding": 1
+        },
+        "ż": {
+          "LeftRightPadding": 1
+        },
+        "ā": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 1
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 1
+          },
+          "Junimo": {
+            "SpriteIndex": 289
+          },
+          "LeftRightPadding": 1
+        },
+        "ē": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 3
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 3
+          },
+          "Junimo": {
+            "SpriteIndex": 293
+          },
+          "LeftRightPadding": 1
+        },
+        "ī": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 5
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 5
+          },
+          "Junimo": {
+            "SpriteIndex": 297
+          },
+          "LeftRightPadding": 2
+        },
+        "ō": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 7
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 7
+          },
+          "Junimo": {
+            "SpriteIndex": 303
+          },
+          "LeftRightPadding": 1
+        },
+        "ū": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 9
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 9
+          },
+          "Junimo": {
+            "SpriteIndex": 309
+          },
+          "LeftRightPadding": 1
+        },
+        "ŷ": {
+          "Dialogue": {
+            "Texture": "{{BoldExtraTexture}}",
+            "SpriteIndex": 11
+          },
+          "Colored": {
+            "Texture": "{{ColoredExtraTexture}}",
+            "SpriteIndex": 11
+          },
+          "Junimo": {
+            "SpriteIndex": 313
+          },
+          "LeftRightPadding": 1
+        },
+        // cyrillic
+        // note a lot of these look like the latin letters, but they're different code points
+        "а": {
+          "LeftRightPadding": 1
+        },
+        "б": {
+          "LeftRightPadding": 1
+        },
+        "в": {
+          "LeftRightPadding": 1
+        },
+        "г": {
+          "LeftRightPadding": 1
+        },
+        "ґ": {
+          "LeftRightPadding": 1
+        },
+        "д": {
+          "LeftRightPadding": 1
+        },
+        "е": {
+          "LeftRightPadding": 1
+        },
+        "ё": {
+          "LeftRightPadding": 1
+        },
+        "з": {
+          "LeftRightPadding": 1
+        },
+        "и": {
+          "LeftRightPadding": 1
+        },
+        "й": {
+          "LeftRightPadding": 1
+        },
+        "к": {
+          "LeftRightPadding": 1
+        },
+        "л": {
+          "LeftRightPadding": 1
+        },
+        "н": {
+          "LeftRightPadding": 1
+        },
+        "о": {
+          "LeftRightPadding": 1
+        },
+        "п": {
+          "LeftRightPadding": 1
+        },
+        "р": {
+          "LeftRightPadding": 1
+        },
+        "с": {
+          "LeftRightPadding": 1
+        },
+        "т": {
+          "LeftRightPadding": 1
+        },
+        "у": {
+          "LeftRightPadding": 1
+        },
+        "ў": {
+          "LeftRightPadding": 1
+        },
+        "х": {
+          "LeftRightPadding": 1
+        },
+        "ч": {
+          "LeftRightPadding": 1
+        },
+        "ъ": {
+          "LeftRightPadding": 1
+        },
+        "ь": {
+          "LeftRightPadding": 1
+        },
+        "э": {
+          "LeftRightPadding": 1
+        },
+        "є": {
+          "LeftRightPadding": 1
+        },
+        "я": {
+          "LeftRightPadding": 1
+        },
+        "і": {
+          "LeftRightPadding": 2
+        },
+        "ї": {
+          "LeftRightPadding": 2
+        }
+      } // Entries
+    }, // lowercase
+
+    // lining numerals
+    {
+      "When": {
+        "BoldNumerals": "Lining"
+      },
+      "Target": "ichortower.FontSmasher/BoldFont",
+      "Action": "EditData",
+      "TargetField": ["Glyphs"],
+      "Fields": {
+        "0": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 0
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 0
+          }
+        },
+        "1": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 1
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 1
+          }
+        },
+        "2": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 2
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 2
+          }
+        },
+        "3": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 3
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 3
+          }
+        },
+        "4": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 4
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 4
+          }
+        },
+        "5": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 5
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 5
+          }
+        },
+        "6": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 6
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 6
+          }
+        },
+        "7": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 7
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 7
+          }
+        },
+        "8": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 8
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 8
+          }
+        },
+        "9": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 9
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 9
+          }
+        },
+        "%": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 10
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 10
+          }
+        }
+      } // Fields
+    }, // Lining
+
+    // SS01 (a, g)
+    {
+      "When": {
+        "BoldSS01": "Plain"
+      },
+      "Target": "ichortower.FontSmasher/BoldFont",
+      "Action": "EditData",
+      "TargetField": ["Glyphs"],
+      "Fields": {
+        "a": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 16
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 16
+          }
+        },
+        "g": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 17
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 17
+          }
+        },
+        "à": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 18
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 18
+          }
+        },
+        "á": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 19
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 19
+          }
+        },
+        "â": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 20
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 20
+          }
+        },
+        "ã": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 21
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 21
+          }
+        },
+        "ä": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 22
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 22
+          }
+        },
+        "å": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 23
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 23
+          }
+        },
+        "ą": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 24
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 24
+          }
+        },
+        "ā": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 25
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 25
+          }
+        },
+        "ğ": {
+          "Dialogue": {
+            "Texture": "{{BoldAltTexture}}",
+            "SpriteIndex": 26
+          },
+          "Colored": {
+            "Texture": "{{ColoredAltTexture}}",
+            "SpriteIndex": 26
+          }
+        }
+      } // Fields
+    } // SS01
+  ]
+}

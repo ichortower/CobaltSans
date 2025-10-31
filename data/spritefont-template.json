@@ -1,0 +1,2004 @@
+// this is the template for SpriteFont1 and SmallFont. they share everything except
+// the target, texture, and metrics scale.
+{
+  "Changes": [
+    {
+      "Target": "{{L@Target}}",
+      "Action": "EditData",
+      "TargetField": ["Metrics"],
+      "Entries": {
+        "ScaleNewSources": "{{L@Scale}}"
+      }
+    },
+    // nb. the lowercase glyphs are in a separate patch, below, due to infelicities in
+    // how content patcher and newtonsoft work (keys are case-insensitive, so e.g.
+    // "A" and "a" collapse to the same entry)
+    {
+      "Target": "{{L@Target}}",
+      "Action": "EditData",
+      "TargetField": ["Glyphs"],
+      "Entries": {
+        "!": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 3, "Width": 1, "Height": 10
+          }
+        },
+        "\"": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 2, "Width": 3, "Height": 3
+          },
+          "AboveBaseline": 8
+        },
+        "#": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 4, "Width": 8, "Height": 8
+          },
+          "AboveBaseline": 1
+        },
+        "$": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 4, "Width": 8, "Height": 8
+          },
+          "AboveBaseline": 1
+        },
+        "%": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 5, "Width": 6, "Height": 8
+          }
+        },
+        "&": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 4, "Width": 7, "Height": 9
+          }
+        },
+        "'": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 2, "Width": 1, "Height": 3
+          },
+          "AboveBaseline": 8
+        },
+        "(": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 2, "Width": 3, "Height": 12
+          },
+          "BelowBaseline": 1
+        },
+        ")": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 2, "Width": 3, "Height": 12
+          },
+          "BelowBaseline": 1
+        },
+        "*": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 5, "Width": 7, "Height": 7
+          },
+          "LeftSideBearing": 1.0,
+          "AboveBaseline": 1
+        },
+        "+": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 7, "Width": 5, "Height": 5
+          },
+          "AboveBaseline": 1
+        },
+        ",": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 11, "Width": 2, "Height": 3
+          },
+          "BelowBaseline": 1
+        },
+        "-": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 9, "Width": 4, "Height": 1
+          },
+          "AboveBaseline": 3
+        },
+        ".": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 11, "Width": 1, "Height": 2
+          }
+        },
+        "/": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 3, "Width": 5, "Height": 10
+          }
+        },
+        "0": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 23, "Width": 5, "Height": 6
+          }
+        },
+        "1": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 23, "Width": 3, "Height": 6
+          }
+        },
+        "2": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 23, "Width": 5, "Height": 6
+          }
+        },
+        "3": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 23, "Width": 5, "Height": 8
+          },
+          "BelowBaseline": 2
+        },
+        "4": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 23, "Width": 5, "Height": 8
+          },
+          "BelowBaseline": 2
+        },
+        "5": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 23, "Width": 5, "Height": 8
+          },
+          "BelowBaseline": 2
+        },
+        "6": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 21, "Width": 5, "Height": 8
+          }
+        },
+        "7": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 23, "Width": 5, "Height": 7
+          },
+          "BelowBaseline": 1
+        },
+        "8": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 21, "Width": 5, "Height": 8
+          }
+        },
+        "9": {
+          "Texture": "{{L@Texture}}",
+            "SourceRect": {
+              "X": 72, "Y": 23, "Width": 5, "Height": 8
+            },
+            "BelowBaseline": 2
+        },
+        ":": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 23, "Width": 1, "Height": 6
+          }
+        },
+        ";": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 23, "Width": 2, "Height": 7
+          },
+          "BelowBaseline": 1
+        },
+        "<": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 21, "Width": 7, "Height": 7
+          },
+          "AboveBaseline": 1
+        },
+        "=": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 24, "Width": 5, "Height": 3
+          },
+          "LeftSideBearing": 1.0,
+          "AboveBaseline": 2
+        },
+        ">": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 21, "Width": 7, "Height": 7
+          },
+          "AboveBaseline": 1
+        },
+        "?": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 19, "Width": 5, "Height": 10
+          }
+        },
+        "@": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 37, "Width": 7, "Height": 7
+          },
+          "AboveBaseline": 1
+        },
+        "A": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 35, "Width": 6, "Height": 10
+          }
+        },
+        "B": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 35, "Width": 6, "Height": 10
+          }
+        },
+        "C": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 35, "Width": 7, "Height": 10
+          }
+        },
+        "D": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 35, "Width": 7, "Height": 10
+          }
+        },
+        "E": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 35, "Width": 6, "Height": 10
+          }
+        },
+        "F": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 35, "Width": 6, "Height": 10
+          },
+          "RightSideBearing": 0.0
+        },
+        "G": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 35, "Width": 7, "Height": 10
+          }
+        },
+        "H": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 35, "Width": 7, "Height": 10
+          }
+        },
+        "I": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 35, "Width": 3, "Height": 10
+          }
+        },
+        "J": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 35, "Width": 3, "Height": 11
+          },
+          "BelowBaseline": 1
+        },
+        "K": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 35, "Width": 6, "Height": 10
+          }
+        },
+        "L": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 35, "Width": 6, "Height": 10
+          }
+        },
+        "M": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 103, "Y": 35, "Width": 9, "Height": 10
+          }
+        },
+        "N": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 35, "Width": 6, "Height": 10
+          }
+        },
+        "O": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 35, "Width": 7, "Height": 10
+          }
+        },
+        "P": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 51, "Width": 6, "Height": 10
+          }
+        },
+        "Q": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 51, "Width": 7, "Height": 10
+          }
+        },
+        "R": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 51, "Width": 6, "Height": 10
+          }
+        },
+        "S": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 51, "Width": 6, "Height": 10
+          }
+        },
+        "T": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 51, "Width": 7, "Height": 10
+          }
+        },
+        "U": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 51, "Width": 7, "Height": 10
+          }
+        },
+        "V": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 51, "Width": 7, "Height": 10
+          }
+        },
+        "W": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 55, "Y": 51, "Width": 9, "Height": 10
+          }
+        },
+        "X": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 51, "Width": 6, "Height": 10
+          }
+        },
+        "Y": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 51, "Width": 7, "Height": 10
+          }
+        },
+        "Z": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 51, "Width": 6, "Height": 10
+          }
+        },
+        "[": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 50, "Width": 3, "Height": 12
+          },
+          "BelowBaseline": 1
+        },
+        "\\": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 51, "Width": 5, "Height": 10
+          }
+        },
+        "]": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 50, "Width": 3, "Height": 12
+          },
+          "BelowBaseline": 1
+        },
+        "^": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 51, "Width": 5, "Height": 3
+          },
+          "AboveBaseline": 7
+        },
+        "_": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 62, "Width": 6, "Height": 1
+          },
+          "LeftSideBearing": 0.0,
+          "RightSideBearing": 0.0,
+          "BelowBaseline": 2
+        },
+        "`": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 69, "Width": 7, "Height": 7
+          },
+          "AboveBaseline": 1
+        },
+        "{": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 82, "Width": 5, "Height": 12
+          },
+          "BelowBaseline": 1
+        },
+        "|": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 82, "Width": 1, "Height": 12
+          },
+          "BelowBaseline": 1
+        },
+        "}": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 82, "Width": 5, "Height": 12
+          },
+          "BelowBaseline": 1
+        },
+        "~": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 87, "Width": 6, "Height": 2
+          },
+          "AboveBaseline": 4
+        },
+        "¡": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 133, "Width": 1, "Height": 10
+          },
+          "BelowBaseline": 2
+        },
+        "ª": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 131, "Width": 3, "Height": 4
+          },
+          "AboveBaseline": 6
+        },
+        "«": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 135, "Width": 6, "Height": 5
+          },
+          "AboveBaseline": 1
+        },
+        "º": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 147, "Width": 3, "Height": 4
+          },
+          "AboveBaseline": 6
+        },
+        "»": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 151, "Width": 6, "Height": 5
+          },
+          "AboveBaseline": 1
+        },
+        "¿": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 149, "Width": 5, "Height": 10
+          },
+          "BelowBaseline": 2
+        },
+        "À": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 160, "Width": 6, "Height": 13
+          }
+        },
+        "Á": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 160, "Width": 6, "Height": 13
+          }
+        },
+        "Â": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 160, "Width": 6, "Height": 13
+          }
+        },
+        "Ã": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 160, "Width": 6, "Height": 13
+          }
+        },
+        "Ä": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 161, "Width": 6, "Height": 12
+          }
+        },
+        "Å": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 160, "Width": 6, "Height": 13
+          }
+        },
+        "Æ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 47, "Y": 163, "Width": 9, "Height": 10
+          }
+        },
+        "Ç": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 163, "Width": 7, "Height": 13
+          },
+          "BelowBaseline": 3
+        },
+        "È": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 160, "Width": 6, "Height": 13
+          }
+        },
+        "É": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 160, "Width": 6, "Height": 13
+          }
+        },
+        "Ê": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 160, "Width": 6, "Height": 13
+          }
+        },
+        "Ë": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 161, "Width": 6, "Height": 12
+          }
+        },
+        "Ì": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 160, "Width": 3, "Height": 13
+          }
+        },
+        "Í": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 160, "Width": 3, "Height": 13
+          }
+        },
+        "Î": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 160, "Width": 3, "Height": 13
+          }
+        },
+        "Ï": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 161, "Width": 3, "Height": 12
+          }
+        },
+        "Ð": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 179, "Width": 8, "Height": 10
+          }
+        },
+        "Ñ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 176, "Width": 6, "Height": 13
+          }
+        },
+        "Ò": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 176, "Width": 7, "Height": 13
+          }
+        },
+        "Ó": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 176, "Width": 7, "Height": 13
+          }
+        },
+        "Ô": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 176, "Width": 7, "Height": 13
+          }
+        },
+        "Õ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 176, "Width": 7, "Height": 13
+          }
+        },
+        "Ö": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 177, "Width": 7, "Height": 12
+          }
+        },
+        "×": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 183, "Width": 5, "Height": 5
+          },
+          "AboveBaseline": 1
+        },
+        "Ø": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 178, "Width": 7, "Height": 12
+          },
+          "BelowBaseline": 1
+        },
+        "Ù": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 176, "Width": 7, "Height": 13
+          }
+        },
+        "Ú": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 176, "Width": 7, "Height": 13
+          }
+        },
+        "Û": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 176, "Width": 7, "Height": 13
+          }
+        },
+        "Ü": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 177, "Width": 7, "Height": 12
+          }
+        },
+        "Ý": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 176, "Width": 7, "Height": 13
+          }
+        },
+        "Þ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 179, "Width": 6, "Height": 10
+          }
+        },
+        "ß": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 179, "Width": 6, "Height": 11
+          },
+          "BelowBaseline": 1
+        },
+        "÷": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 215, "Width": 5, "Height": 5
+          },
+          "AboveBaseline": 1
+        },
+        "Œ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 99, "Width": 9, "Height": 10
+          }
+        },
+        "İ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 18, "Y": 97, "Width": 3, "Height": 12
+          }
+        },
+        "Ş": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 99, "Width": 6, "Height": 13
+          },
+          "BelowBaseline": 3
+        },
+        "Ğ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 96, "Width": 7, "Height": 13
+          }
+        },
+        "’": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 98, "Width": 2, "Height": 3
+          },
+          "AboveBaseline": 8
+        },
+        "Ő": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 97, "Width": 7, "Height": 13
+          }
+        },
+        "Ű": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 97, "Width": 7, "Height": 13
+          }
+        },
+        "Ą": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 115, "Width": 6, "Height": 12
+          },
+          "BelowBaseline": 2
+        },
+        "Ć": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 112, "Width": 7, "Height": 13
+          }
+        },
+        "Ę": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 115, "Width": 6, "Height": 12
+          }
+        },
+        "Ł": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 115, "Width": 7, "Height": 10
+          },
+          "LeftSideBearing": 0.0
+        },
+        "Ń": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 112, "Width": 6, "Height": 13
+          }
+        },
+        "Ś": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 112, "Width": 6, "Height": 13
+          }
+        },
+        "Ź": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 112, "Width": 6, "Height": 13
+          }
+        },
+        "Ż": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 113, "Width": 6, "Height": 12
+          }
+        },
+        "Ā": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 321, "Width": 6, "Height": 12
+          }
+        },
+        "Ē": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 321, "Width": 6, "Height": 12
+          }
+        },
+        "Ī": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 321, "Width": 5, "Height": 12
+          },
+          "LeftSideBearing": 0.0,
+          "RightSideBearing": 0.0
+        },
+        "Ō": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 321, "Width": 7, "Height": 12
+          }
+        },
+        "Ū": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 321, "Width": 7, "Height": 12
+          }
+        },
+        "Ŷ": {
+          "Texture": "{{L@Texture}}",
+          "ScaleMetrics": "{{L@Scale}}",
+          "SourceRect": {
+            "X": 80, "Y": 320, "Width": 7, "Height": 13
+          }
+        },
+        //
+        // cyrillic! don't confuse these with latin lookalikes
+        //
+        "А": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 227, "Width": 6, "Height": 10
+          }
+        },
+        "Б": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 227, "Width": 6, "Height": 10
+          }
+        },
+        "В": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 227, "Width": 6, "Height": 10
+          }
+        },
+        "Г": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 227, "Width": 6, "Height": 10
+          }
+        },
+        "Д": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 227, "Width": 7, "Height": 11
+          },
+          "BelowBaseline": 1
+        },
+        "Е": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 227, "Width": 6, "Height": 10
+          }
+        },
+        "Ж": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 47, "Y": 227, "Width": 9, "Height": 10
+          }
+        },
+        "З": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 227, "Width": 6, "Height": 10
+          }
+        },
+        "И": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 227, "Width": 6, "Height": 10
+          }
+        },
+        "Й": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 224, "Width": 6, "Height": 13
+          }
+        },
+        "К": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 227, "Width": 6, "Height": 10
+          }
+        },
+        "Л": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 227, "Width": 7, "Height": 10
+          }
+        },
+        "М": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 95, "Y": 227, "Width": 9, "Height": 10
+          }
+        },
+        "Н": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 227, "Width": 7, "Height": 10
+          }
+        },
+        "О": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 227, "Width": 7, "Height": 10
+          }
+        },
+        "П": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 227, "Width": 6, "Height": 10
+          }
+        },
+        "Р": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 243, "Width": 6, "Height": 10
+          }
+        },
+        "С": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 243, "Width": 7, "Height": 10
+          }
+        },
+        "Т": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 243, "Width": 7, "Height": 10
+          }
+        },
+        "У": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 243, "Width": 7, "Height": 10
+          }
+        },
+        "Ф": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 31, "Y": 243, "Width": 9, "Height": 10
+          }
+        },
+        "Х": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 243, "Width": 6, "Height": 10
+          }
+        },
+        "Ц": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 243, "Width": 7, "Height": 11
+          },
+          "BelowBaseline": 1
+        },
+        "Ч": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 243, "Width": 6, "Height": 10
+          }
+        },
+        "Ш": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 63, "Y": 243, "Width": 9, "Height": 10
+          }
+        },
+        "Щ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 243, "Width": 10, "Height": 11
+          },
+          "BelowBaseline": 1
+        },
+        "Ъ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 82, "Y": 243, "Width": 8, "Height": 10
+          }
+        },
+        "Ы": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 90, "Y": 243, "Width": 7, "Height": 10
+          }
+        },
+        "Ь": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 98, "Y": 243, "Width": 6, "Height": 10
+          }
+        },
+        "Э": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 243, "Width": 7, "Height": 10
+          }
+        },
+        "Ю": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 243, "Width": 9, "Height": 10
+          }
+        },
+        "Я": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 122, "Y": 243, "Width": 6, "Height": 10
+          }
+        },
+        "Ё": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 257, "Width": 6, "Height": 12
+          }
+        },
+        "Ґ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 258, "Width": 6, "Height": 11
+          }
+        },
+        "Є": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 259, "Width": 7, "Height": 10
+          }
+        },
+        "І": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 259, "Width": 3, "Height": 10
+          }
+        },
+        "Ї": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 257, "Width": 3, "Height": 12
+          }
+        },
+        "Ӱ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 257, "Width": 7, "Height": 12
+          }
+        }
+      }
+    },
+    {
+      "Target": "{{L@Target}}",
+      "Action": "EditData",
+      "TargetField": ["Glyphs"],
+      "Entries": {
+        "a": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 71, "Width": 5, "Height": 6
+          }
+        },
+        "b": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 68, "Width": 5, "Height": 9
+          }
+        },
+        "c": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 71, "Width": 5, "Height": 6
+          }
+        },
+        "d": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 68, "Width": 5, "Height": 9
+          }
+        },
+        "e": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 71, "Width": 5, "Height": 6
+          }
+        },
+        "f": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 68, "Width": 4, "Height": 9
+          }
+        },
+        "g": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 70, "Width": 6, "Height": 10
+          },
+          "RightSideBearing": 0.0,
+          "BelowBaseline": 3
+        },
+        "h": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 68, "Width": 5, "Height": 9
+          }
+        },
+        "i": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 69, "Width": 1, "Height": 8
+          }
+        },
+        "j": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 69, "Width": 3, "Height": 11
+          },
+          "LeftSideBearing": 0.0,
+          "BelowBaseline": 3
+        },
+        "k": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 68, "Width": 5, "Height": 9
+          }
+        },
+        "l": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 68, "Width": 2, "Height": 9
+          }
+        },
+        "m": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 103, "Y": 71, "Width": 9, "Height": 6
+          }
+        },
+        "n": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 71, "Width": 5, "Height": 6
+          }
+        },
+        "o": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 71, "Width": 5, "Height": 6
+          }
+        },
+        "p": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 87, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": 3
+        },
+        "q": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 87, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": 3
+        },
+        "r": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 87, "Width": 4, "Height": 6
+          }
+        },
+        "s": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 87, "Width": 5, "Height": 6
+          }
+        },
+        "t": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 85, "Width": 4, "Height": 8
+          }
+        },
+        "u": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 87, "Width": 5, "Height": 6
+          }
+        },
+        "v": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 87, "Width": 5, "Height": 6
+          }
+        },
+        "w": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 87, "Width": 7, "Height": 6
+          }
+        },
+        "x": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 87, "Width": 5, "Height": 6
+          }
+        },
+        "y": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 87, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": 3
+        },
+        "z": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 87, "Width": 5, "Height": 6
+          }
+        },
+        "à": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 196, "Width": 5, "Height": 9
+          }
+        },
+        "á": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 196, "Width": 5, "Height": 9
+          }
+        },
+        "â": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 196, "Width": 5, "Height": 9
+          }
+        },
+        "ã": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 196, "Width": 5, "Height": 9
+          }
+        },
+        "ä": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 197, "Width": 5, "Height": 8
+          }
+        },
+        "å": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 195, "Width": 5, "Height": 10
+          }
+        },
+        "æ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 47, "Y": 199, "Width": 9, "Height": 6
+          }
+        },
+        "ç": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 199, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": 3
+        },
+        "è": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 196, "Width": 5, "Height": 9
+          }
+        },
+        "é": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 196, "Width": 5, "Height": 9
+          }
+        },
+        "ê": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 196, "Width": 5, "Height": 9
+          }
+        },
+        "ë": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 197, "Width": 5, "Height": 8
+          }
+        },
+        "ì": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 196, "Width": 2, "Height": 9
+          },
+          "LeftSideBearing": 0.0
+        },
+        "í": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 105, "Y": 196, "Width": 2, "Height": 9
+          },
+          "RightSideBearing": 0.0
+        },
+        "î": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 196, "Width": 3, "Height": 9
+          },
+          "LeftSideBearing": 0.0,
+          "RightSideBearing": 0.0
+        },
+        "ï": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 197, "Width": 3, "Height": 8
+          },
+          "LeftSideBearing": 0.0,
+          "RightSideBearing": 0.0
+        },
+        "ð": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 212, "Width": 5, "Height": 9
+          }
+        },
+        "ñ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 212, "Width": 5, "Height": 9
+          }
+        },
+        "ò": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 212, "Width": 5, "Height": 9
+          }
+        },
+        "ó": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 212, "Width": 5, "Height": 9
+          }
+        },
+        "ô": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 212, "Width": 5, "Height": 9
+          }
+        },
+        "õ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 212, "Width": 5, "Height": 9
+          }
+        },
+        "ö": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 213, "Width": 5, "Height": 8
+          }
+        },
+        "ø": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 214, "Width": 5, "Height": 8
+          },
+          "BelowBaseline": 1
+        },
+        "ù": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 212, "Width": 5, "Height": 9
+          }
+        },
+        "ú": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 212, "Width": 5, "Height": 9
+          }
+        },
+        "û": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 212, "Width": 5, "Height": 9
+          }
+        },
+        "ü": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 213, "Width": 5, "Height": 8
+          }
+        },
+        "ý": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 212, "Width": 5, "Height": 12
+          },
+          "BelowBaseline": 3
+        },
+        "þ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 212, "Width": 5, "Height": 12
+          },
+          "BelowBaseline": 3
+        },
+        "ÿ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 213, "Width": 5, "Height": 11
+          },
+          "BelowBaseline": 3
+        },
+        "œ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 10, "Y": 103, "Width": 7, "Height": 6
+          }
+        },
+        "ı": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 103, "Width": 1, "Height": 6
+          }
+        },
+        "ş": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 103, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": 3
+        },
+        "ğ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 100, "Width": 6, "Height": 12
+          },
+          "RightSideBearing": 0.0,
+          "BelowBaseline": 3
+        },
+        "ő": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 101, "Width": 5, "Height": 9
+          }
+        },
+        "ű": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 101, "Width": 5, "Height": 9
+          }
+        },
+        "ą": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 119, "Width": 5, "Height": 8
+          },
+          "BelowBaseline": 2
+        },
+        "ć": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 116, "Width": 5, "Height": 9
+          }
+        },
+        "ę": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 119, "Width": 5, "Height": 8
+          }
+        },
+        "ł": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 116, "Width": 3, "Height": 9
+          },
+          "LeftSideBearing": 0.0
+        },
+        "ń": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 116, "Width": 5, "Height": 9
+          }
+        },
+        "ś": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 116, "Width": 5, "Height": 9
+          }
+        },
+        "ź": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 116, "Width": 5, "Height": 9
+          }
+        },
+        "ż": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 117, "Width": 5, "Height": 8
+          }
+        },
+        "ā": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 325, "Width": 5, "Height": 8
+          }
+        },
+        "ē": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 325, "Width": 5, "Height": 8
+          }
+        },
+        "ī": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 325, "Width": 3, "Height": 8
+          },
+          "LeftSideBearing": 0.0,
+          "RightSideBearing": 0.0
+        },
+        "ō": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 325, "Width": 5, "Height": 8
+          }
+        },
+        "ū": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 325, "Width": 5, "Height": 8
+          }
+        },
+        "ŷ": {
+          "Texture": "{{L@Texture}}",
+          "ScaleMetrics": "{{L@Scale}}",
+          "SourceRect": {
+            "X": 88, "Y": 324, "Width": 5, "Height": 12
+          },
+          "BelowBaseline": 3
+        },
+        //
+        // cyrillic! mind the lookalikes, etc.
+        //
+        "а": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "б": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 276, "Width": 5, "Height": 9
+          }
+        },
+        "в": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "г": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "д": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 279, "Width": 7, "Height": 7
+          },
+          "BelowBaseline": 1
+        },
+        "е": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "ж": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 279, "Width": 7, "Height": 6
+          }
+        },
+        "з": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "и": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "й": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 276, "Width": 5, "Height": 9
+          }
+        },
+        "к": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "л": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "м": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 279, "Width": 6, "Height": 6
+          }
+        },
+        "н": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "о": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "п": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 279, "Width": 5, "Height": 6
+          }
+        },
+        "р": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 295, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": 3
+        },
+        "с": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 295, "Width": 5, "Height": 6
+          }
+        },
+        "т": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 295, "Width": 5, "Height": 6
+          }
+        },
+        "у": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 295, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": 3
+        },
+        "ф": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 293, "Width": 7, "Height": 10
+          },
+          "BelowBaseline": 2
+        },
+        "х": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 295, "Width": 5, "Height": 6
+          }
+        },
+        "ц": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 48, "Y": 295, "Width": 6, "Height": 7
+          },
+          "BelowBaseline": 1
+        },
+        "ч": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 56, "Y": 295, "Width": 5, "Height": 6
+          }
+        },
+        "ш": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 64, "Y": 295, "Width": 7, "Height": 6
+          }
+        },
+        "щ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 72, "Y": 295, "Width": 8, "Height": 7
+          },
+          "BelowBaseline": 1
+        },
+        "ъ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 80, "Y": 295, "Width": 6, "Height": 6
+          }
+        },
+        "ы": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 88, "Y": 295, "Width": 6, "Height": 6
+          }
+        },
+        "ь": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 96, "Y": 295, "Width": 4, "Height": 6
+          }
+        },
+        "э": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 104, "Y": 295, "Width": 5, "Height": 6
+          }
+        },
+        "ю": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 112, "Y": 295, "Width": 7, "Height": 6
+          }
+        },
+        "я": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 120, "Y": 295, "Width": 5, "Height": 6
+          }
+        },
+        "ё": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 0, "Y": 309, "Width": 5, "Height": 8
+          }
+        },
+        "ґ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 8, "Y": 310, "Width": 5, "Height": 7
+          }
+        },
+        "є": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 16, "Y": 311, "Width": 5, "Height": 6
+          }
+        },
+        "і": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 24, "Y": 309, "Width": 1, "Height": 8
+          }
+        },
+        "ї": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 32, "Y": 309, "Width": 3, "Height": 8
+          },
+          "LeftSideBearing": 0.0,
+          "RightSideBearing": 0.0
+        },
+        "ӱ": {
+          "Texture": "{{L@Texture}}",
+          "SourceRect": {
+            "X": 40, "Y": 309, "Width": 5, "Height": 11
+          },
+          "BelowBaseline": 3
+        }
+      }
+    },
+
+    // lining numerals
+    {
+      "When": {
+        "SpriteNumerals": "Lining"
+      },
+      "Target": "{{L@Target}}",
+      "Action": "EditData",
+      "TargetField": ["Glyphs"],
+      "Fields": {
+        "0": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 0, "Y": 4, "Width": 5, "Height": 9
+          }
+        },
+        "1": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 8, "Y": 4, "Width": 3, "Height": 9
+          },
+          "Padding": {
+            "Left": 1,
+            "Right": 1
+          },
+          "LeftSideBearing": 1.0
+        },
+        "2": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 16, "Y": 4, "Width": 5, "Height": 9
+          }
+        },
+        "3": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 24, "Y": 4, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": null
+        },
+        "4": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 32, "Y": 4, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": null
+        },
+        "5": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 40, "Y": 4, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": null
+        },
+        "6": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 48, "Y": 4, "Width": 5, "Height": 9
+          }
+        },
+        "7": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 56, "Y": 4, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": null
+        },
+        "8": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 64, "Y": 4, "Width": 5, "Height": 9
+          }
+        },
+        "9": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 72, "Y": 4, "Width": 5, "Height": 9
+          },
+          "BelowBaseline": null
+        },
+        "%": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 80, "Y": 3, "Width": 7, "Height": 10
+          }
+        },
+        "+": {
+          "AboveBaseline": 2
+        },
+        "-": {
+          "AboveBaseline": 4
+        },
+        "=": {
+          "AboveBaseline": 3
+        },
+        ":": {
+          "AboveBaseline": 1
+        },
+        "×": {
+          "AboveBaseline": 2
+        },
+        "÷": {
+          "AboveBaseline": 2
+        }
+      }
+    },
+    // stylistic set 01 (a, g)
+    {
+      "When": {
+        "SpriteSS01": "Plain"
+      },
+      "Target": "{{L@Target}}",
+      "Action": "EditData",
+      "TargetField": ["Glyphs"],
+      "Fields": {
+        "a": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 0, "Y": 23, "Width": 5, "Height": 6
+          }
+        },
+        "g": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 8, "Y": 23, "Width": 5, "Height": 9
+          },
+          "RightSideBearing": 1.0,
+          "BelowBaseline": 3
+        },
+        "à": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 16, "Y": 20, "Width": 5, "Height": 9
+          }
+        },
+        "á": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 24, "Y": 20, "Width": 5, "Height": 9
+          }
+        },
+        "â": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 32, "Y": 20, "Width": 5, "Height": 9
+          }
+        },
+        "ã": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 40, "Y": 20, "Width": 5, "Height": 9
+          }
+        },
+        "ä": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 48, "Y": 21, "Width": 5, "Height": 8
+          }
+        },
+        "å": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 56, "Y": 19, "Width": 5, "Height": 10
+          }
+        },
+        "ą": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 64, "Y": 23, "Width": 5, "Height": 8
+          },
+          "BelowBaseline": 2
+        },
+        "ā": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 72, "Y": 21, "Width": 5, "Height": 8
+          }
+        },
+        "ğ": {
+          "Texture": "{{L@AltTexture}}",
+          "SourceRect": {
+            "X": 72, "Y": 20, "Width": 5, "Height": 12
+          },
+          "RightSideBearing": 1.0,
+          "BelowBaseline": 3
+        }
+
+      }
+    }
+  ]
+}
