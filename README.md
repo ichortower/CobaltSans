@@ -40,11 +40,10 @@ sprite), and they can be tweaked independently.
 - **Letter style (a, g)**: Use the default 'a' and 'g', or plainer,
   handwriting-style versions.
 
-I recommend configuring Cobalt Sans via
-[url=https://www.nexusmods.com/stardewvalley/mods/5098]Generic Mod Config
-Menu[/url], since that uses the nicer names for the config options, gives you
-helpful hover text, and features a small specimen at the bottom so you can
-easily compare the settings.
+I recommend configuring Cobalt Sans via [Generic Mod Config
+Menu](https://www.nexusmods.com/stardewvalley/mods/5098), since that uses the
+nicer names for the config options, gives you helpful hover text, and features
+a small specimen at the bottom so you can easily compare the settings.
 
 
 ## Compatibility
