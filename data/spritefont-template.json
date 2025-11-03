@@ -1808,7 +1808,15 @@
             "X": 40, "Y": 309, "Width": 5, "Height": 11
           },
           "BelowBaseline": 3
-        }
+        },
+        // these are to delete lengthened keys from the font smasher sample
+        // pack, so they don't stick around and mess us up
+        "ā lower": null,
+        "ē lower": null,
+        "ī lower": null,
+        "ō lower": null,
+        "ū lower": null,
+        "ŷ lower": null
       }
     },
 
