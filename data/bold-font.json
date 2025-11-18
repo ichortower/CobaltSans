@@ -32,9 +32,21 @@
           "LeftRightPadding": 2
         },
         "(": {
+          "Dialogue": {
+            "Baseline": 2
+          },
+          "Colored": {
+            "Baseline": 2
+          },
           "LeftRightPadding": 1
         },
         ")": {
+          "Dialogue": {
+            "Baseline": 2
+          },
+          "Colored": {
+            "Baseline": 2
+          },
           "LeftRightPadding": 1
         },
         "*": {
