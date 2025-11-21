@@ -6,9 +6,9 @@
       "FromFile": "assets/{{TargetWithoutPath}}.png",
       "Priority": "High"
     },
-    // do a late edit on font_bold to overwrite recolors if necessary
+    // do late edits as well (if necessary) to overwrite recolors
     {
-      "Target": "LooseSprites/font_bold",
+      "Target": "LooseSprites/font_bold, LooseSprites/font_colored, {{BoldAltTexture}}, {{BoldExtraTexture}}, {{ColoredAltTexture}}, {{ColoredExtraTexture}}",
       "Action": "EditImage",
       "FromFile": "assets/recolor/{{TargetWithoutPath}}_{{MatchRecolor}}.png",
       "Priority": "Late",
@@ -18,7 +18,7 @@
       }
     },
     {
-      "Target": "LooseSprites/font_bold",
+      "Target": "LooseSprites/font_bold, LooseSprites/font_colored, {{BoldAltTexture}}, {{BoldExtraTexture}}, {{ColoredAltTexture}}, {{ColoredExtraTexture}}",
       "Action": "EditImage",
       "FromFile": "assets/{{TargetWithoutPath}}.png",
       "Priority": "Late",
