@@ -10,7 +10,8 @@ COLORED_VANILLA= -fill "\#ffffff" -opaque "\#56160c" \
 # guy is made of the other colors
 
 
-# earthy doesn't replace font_colored at all
+# earthy doesn't replace font_colored at all, but we need to make
+# one to override other recolors when manually choosing earthy palette
 
 BOLDTEXT_EARTHY= -fill "\#3f2325" -opaque "\#56160c" \
 	-fill "\#987365" -opaque "\#c17c3c" \
@@ -28,6 +29,7 @@ MISC_EARTHY= -fill "\#935f5d" -opaque "\#bf5231" \
 	-fill "\#7f6bd8" -opaque "\#8a60f2" \
 	-fill "\#a5ace5" -opaque "\#a0a3f2"
 BOLD_EARTHY:= ${BOLDTEXT_EARTHY} ${MISC_EARTHY}
+COLORED_EARTHY:= ${COLOREDTEXT_EARTHY} ${MISC_EARTHY}
 
 
 BOLDTEXT_LOWKEY= -fill "\#6a4432" -opaque "\#56160c" \
@@ -55,8 +57,8 @@ BOLDTEXT_LAVENDER= -fill "\#583535" -opaque "\#56160c" \
 	-fill "\#98726d" -opaque "\#c17c3c" \
 	-fill "\#c39a90" -opaque "\#e09650"
 COLOREDTEXT_LAVENDER= -fill "\#dec4c1" -opaque "\#ffffff" \
-	-fill "\#391f1f4d" -opaque "\#0000004d" \
-	-fill "\#6944446f" -opaque "\#4545454d"
+	-fill "\#6944446f" -opaque "\#0000004d" \
+	-fill "\#391f1f4d" -opaque "\#4545454d"
 MISC_LAVENDER= -fill "\#825a5a" -opaque "\#bf5231" \
 	-fill "\#926767" -opaque "\#db7439" \
 	-fill "\#edb558" -opaque "\#ffae00" \

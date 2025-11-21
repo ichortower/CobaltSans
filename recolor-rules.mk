@@ -1,12 +1,18 @@
 recolors: earthy lowkey lavender catvalley magical overgrown bogsforest
 
 
+# colored alt and extra omitted from earthy since not needed
+
 earthy: assets/recolor/font_bold_EarthyInterface.png \
 	assets/recolor/font_bold_alt_EarthyInterface.png \
-	assets/recolor/font_bold_extra_EarthyInterface.png
+	assets/recolor/font_bold_extra_EarthyInterface.png \
+	assets/recolor/font_colored_EarthyInterface.png
 
-assets/recolor/%_EarthyInterface.png: assets/%.png
+assets/recolor/font_b%_EarthyInterface.png: assets/font_b%.png
 	convert "$^" -channel RGBA ${BOLD_EARTHY} PNG32:"$@"
+
+assets/recolor/font_c%_EarthyInterface.png: assets/font_c%.png
+	convert "$^" -channel RGBA ${COLORED_EARTHY} PNG32:"$@"
 
 
 lowkey: assets/recolor/font_bold_LowkeySpring.png \
@@ -65,7 +71,7 @@ assets/recolor/font_c%_MagicalValley.png: assets/font_c%.png
 	convert "$^" -channel RGBA ${COLORED_MAGICAL} PNG32:"$@"
 
 
-# alt and extra omitted from these two since not needed
+# colored alt and extra omitted from these two since not needed
 
 overgrown: assets/recolor/font_bold_OvergrownFlowery.png \
 	assets/recolor/font_bold_alt_OvergrownFlowery.png \
