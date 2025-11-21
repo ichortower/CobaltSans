@@ -119,7 +119,7 @@ COLORED_MAGICAL:= ${COLOREDTEXT_MAGICAL} ${MISC_MAGICAL}
 # overgrown and bog's forest don't tint the text color in font_colored
 
 BOLDTEXT_OVERGROWN= -fill "\#684847" -opaque "\#56160c" \
-	-fill "\#847170b4" -opaque "\#c17c3c" \
+	-fill "\#6d64625c" -opaque "\#c17c3c" \
 	-fill "\#96969633" -opaque "\#e09650"
 COLOREDTEXT_OVERGROWN=
 MISC_OVERGROWN= -fill "\#c6b6ac" -opaque "\#bf5231" \
