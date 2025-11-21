@@ -1,0 +1,5 @@
+[this page intentionally left blank]
+
+This folder is empty of .png files in the repo on purpose. The recolored assets
+are generated using imagemagick and the makefile rules, so only the source
+files (the aseprite files and the direct-result .pngs) are tracked.
