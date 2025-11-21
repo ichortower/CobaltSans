@@ -6,6 +6,26 @@
       "FromFile": "assets/{{TargetWithoutPath}}.png",
       "Priority": "High"
     },
+    // do a late edit on font_bold to overwrite recolors if necessary
+    {
+      "Target": "LooseSprites/font_bold",
+      "Action": "EditImage",
+      "FromFile": "assets/recolor/{{TargetWithoutPath}}_{{MatchRecolor}}.png",
+      "Priority": "Late",
+      "When": {
+        "HasValue: {{MatchRecolor}}": true,
+        "HasFile: {{FromFile}}": true,
+      }
+    },
+    {
+      "Target": "LooseSprites/font_bold",
+      "Action": "EditImage",
+      "FromFile": "assets/{{TargetWithoutPath}}.png",
+      "Priority": "Late",
+      "When": {
+        "MatchRecolor": "Vanilla"
+      }
+    },
     {
       "Target": "ichortower.FontSmasher/BoldFont",
       "Action": "EditData",

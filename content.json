@@ -35,6 +35,10 @@
       "AllowBlank": true,
       "Default": "",
       "Section": "Bold Specimen"
+    },
+    "ColorMatch": {
+      "AllowValues": "Auto, BogsForest, CatValley, EarthyInterface, LavenderDreams, LowkeySpring, MagicalValley, OvergrownFlowery, Vanilla",
+      "Default": "Auto"
     }
   },
   "DynamicTokens": [
@@ -72,6 +76,69 @@
     {
       "Name": "ColoredExtraTexture",
       "Value": "{{ModId}}/font_colored_extra"
+    },
+
+    // token to match active recolor. auto-detect installed UI recolors,
+    // but override with user selection if not set to "Auto"
+    {
+      "Name": "MatchRecolor",
+      "Value": ""
+    },
+    {
+      "Name": "MatchRecolor",
+      "Value": "EarthyInterface",
+      "When": {
+        "HasMod |contains=DaisyNiko.EarthyInterface": true
+      }
+    },
+    {
+      "Name": "MatchRecolor",
+      "Value": "OvergrownFlowery",
+      "When": {
+        "HasMod |contains=Maraluna.OvergrownFloweryInterface": true
+      }
+    },
+    {
+      "Name": "MatchRecolor",
+      "Value": "LowkeySpring",
+      "When": {
+        "HasMod |contains=Perlade.LowkeySpringUI": true
+      }
+    },
+    {
+      "Name": "MatchRecolor",
+      "Value": "BogsForest",
+      "When": {
+        "HasMod |contains=Bos.UIInterface": true
+      }
+    },
+    {
+      "Name": "MatchRecolor",
+      "Value": "LavenderDreams",
+      "When": {
+        "HasMod |contains=VinillaBean.LavenderDreams": true,
+      }
+    },
+    {
+      "Name": "MatchRecolor",
+      "Value": "MagicalValley",
+      "When": {
+        "HasMod |contains=HReenna.MagicalValleyInterface": true
+      }
+    },
+    {
+      "Name": "MatchRecolor",
+      "Value": "CatValley",
+      "When": {
+        "HasMod |contains=RimeNovi.CatValley": true
+      }
+    },
+    {
+      "Name": "MatchRecolor",
+      "Value": "{{ColorMatch}}",
+      "When": {
+        "ColorMatch |contains=Auto": false
+      }
     }
   ],
   "Changes": [
