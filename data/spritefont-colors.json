@@ -1,0 +1,95 @@
+{
+  "Changes": [
+    {
+      "Target": "ichortower.FontSmasher/SpriteFontColors",
+      "Action": "EditData",
+      "Entries": {
+        "Text": "#3f2325",
+        "Shadow": "#b99c8c",
+        "DarkShadow": "#b38c7c",
+        "Unselected": "#77585a"
+      },
+      "When": {
+        "MatchRecolor": "EarthyInterface"
+      }
+    },
+    {
+      "Target": "ichortower.FontSmasher/SpriteFontColors",
+      "Action": "EditData",
+      "Entries": {
+        "Text": "#684847",
+        "Shadow": "#e6dcd5",
+        "DarkShadow": "#e6dcd5",
+        "Unselected": "#916766"
+      },
+      "When": {
+        "MatchRecolor": "OvergrownFlowery"
+      }
+    },
+    {
+      "Target": "ichortower.FontSmasher/SpriteFontColors",
+      "Action": "EditData",
+      "Entries": {
+        "Text": "#6a4432",
+        "Shadow": "#dcc0b5",
+        "DarkShadow": "#dcc0b5",
+        "Unselected": "#93644e"
+      },
+      "When": {
+        "MatchRecolor": "LowkeySpring"
+      }
+    },
+    {
+      "Target": "ichortower.FontSmasher/SpriteFontColors",
+      "Action": "EditData",
+      "Entries": {
+        "Text": "#1e2e1e",
+        "Shadow": "#746654",
+        "DarkShadow": "#655847",
+        "Unselected": "#3e573e"
+      },
+      "When": {
+        "MatchRecolor": "BogsForest"
+      }
+    },
+    {
+      "Target": "ichortower.FontSmasher/SpriteFontColors",
+      "Action": "EditData",
+      "Entries": {
+        "Text": "#583535",
+        "Shadow": "#c9aaa0",
+        "DarkShadow": "#c39a90",
+        "Unselected": "#865656"
+      },
+      "When": {
+        "MatchRecolor": "LavenderDreams"
+      }
+    },
+    {
+      "Target": "ichortower.FontSmasher/SpriteFontColors",
+      "Action": "EditData",
+      "Entries": {
+        "Text": "#68382c",
+        "Shadow": "#e5adad",
+        "DarkShadow": "#e5adad",
+        "Unselected": "#915546"
+      },
+      "When": {
+        "MatchRecolor": "MagicalValley"
+      }
+    },
+    {
+      "Target": "ichortower.FontSmasher/SpriteFontColors",
+      "Action": "EditData",
+      "Entries": {
+        "Text": "#5a423c",
+        "Shadow": "#eddcd2",
+        "DarkShadow": "#decec4",
+        "Unselected": "#83665f"
+      },
+      "When": {
+        "MatchRecolor": "CatValley"
+      }
+    }
+  ]
+}

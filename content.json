@@ -1,6 +1,11 @@
 {
   "Format": "2.8.0",
   "ConfigSchema": {
+    "ColorMatch": {
+      "AllowValues": "Auto, BogsForest, CatValley, EarthyInterface, LavenderDreams, LowkeySpring, MagicalValley, OvergrownFlowery, Vanilla",
+      "Default": "Auto",
+      "Section": "General"
+    },
     "BoldEnabled": {
       "AllowValues": "true, false",
       "Default": true,
@@ -35,10 +40,6 @@
       "AllowBlank": true,
       "Default": "",
       "Section": "Bold Specimen"
-    },
-    "ColorMatch": {
-      "AllowValues": "Auto, BogsForest, CatValley, EarthyInterface, LavenderDreams, LowkeySpring, MagicalValley, OvergrownFlowery, Vanilla",
-      "Default": "Auto"
     }
   },
   "DynamicTokens": [

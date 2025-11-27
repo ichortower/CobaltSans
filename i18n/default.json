@@ -1,4 +1,7 @@
 {
+  "config.section.General.name": "General",
+  "config.ColorMatch.name": "Match UI Mod",
+  "config.ColorMatch.description": "Change the colors of the bold and sprite fonts to match your UI recolor or retexture. 'Auto' will try to figure it out, or you can choose whichever one you like.",
   "config.section.Bold Font.name": "Bold Font",
   "config.section.Bold Font.description": "The font used for dialogue boxes, NPC speech, mail, and some menus (like this one!) for section headings.",
   "config.BoldEnabled.name": "Enable",

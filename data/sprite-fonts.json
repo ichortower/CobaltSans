@@ -19,6 +19,13 @@
         "L@AltTexture": "{{SpriteFontAltTexture}}",
         "L@Scale": 200
       }
+    },
+    {
+      "Action": "Include",
+      "FromFile": "data/spritefont-colors.json",
+      "When": {
+        "HasValue: {{MatchRecolor}}": true
+      }
     }
   ]
 }
