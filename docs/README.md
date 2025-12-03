@@ -48,6 +48,22 @@ a small specimen at the bottom so you can easily compare the settings.
 
 ## Compatibility
 
+This mod is compatible with the following interface recolor mods, and should
+automatically match whichever one you are using (at your convenience, please
+request or implement support for your favorite unlisted mod):
+
+- [Bog's Forest UI Interface](https://www.nexusmods.com/stardewvalley/mods/23987)
+- [Cat Valley (Interface)](https://www.nexusmods.com/stardewvalley/mods/39379)
+- [DaisyNiko's Earthy Interface](https://www.nexusmods.com/stardewvalley/mods/13658)
+- [Lavender Dreams UI Recolor](https://www.nexusmods.com/stardewvalley/mods/17323)
+- [Lowkey Spring Interface Recolor](https://www.nexusmods.com/stardewvalley/mods/25349)
+- [Magical Valley (Interface)](https://www.nexusmods.com/stardewvalley/mods/26211)
+- [Overgrown Flowery Interface](https://www.nexusmods.com/stardewvalley/mods/6166)
+
+If the colors look wrong, or if you have a different interface recolor
+installed, you can choose whichever recolor option in the config menu looks
+the best to you (click "Save" after choosing to apply the new color!).
+
 These fonts have slightly different metrics than the vanilla fonts: in
 particular, the bold font is significantly narrower (mostly by removing excess
 whitespace), so more text will fit in the same horizontal space than in the
@@ -55,18 +71,9 @@ base game. This mostly shouldn't matter, since the game code typically measures
 strings before rendering them, but anything aligned using spaces is likely to
 look off if it is expecting the vanilla fonts.
 
-Generally speaking, you won't be able to use any other font packs that replace
-the entire fonts, but any packs adding glyphs not covered by vanilla should be
-compatible (although they might look out of place).
-
-Because this mod replaces nearly every glyph in `LooseSprites/font_bold` and
-`LooseSprites/font_colored`, it Loads those assets (when the bold font is
-enabled), under the assumption that if you have this mod installed, you want to
-see it. This will obviously compete with other mods that do the same, and it
-means edits will overwrite it.
-
-This doesn't support any UI recolors at this time, but I would like it to, so
-please let me know which ones are important to you and I can prioritize those.
+This mod both Loads and Edits (with Late priority, when matching a UI recolor
+mod) the `LooseSprites/font_bold` and `LooseSprites/font_colored` assets, on
+the assumption that if you have this mod installed, you want to see it.
 
 
 ## Other Notes
