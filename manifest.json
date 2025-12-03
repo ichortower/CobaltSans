@@ -2,7 +2,7 @@
   "Name": "Cobalt Sans (font family)",
   "Author": "ichortower",
   "Description": "Replaces the default Latin fonts using Font Smasher.",
-  "Version": "1.0.0",
+  "Version": "1.1.0",
   "UniqueID": "ichortower.CobaltSans",
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
